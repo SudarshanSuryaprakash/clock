@@ -39,25 +39,42 @@ const reverseNumber = (number) => {
     return parseInt(reversedNum);
 }
 
+//Not only does this check whether a number is odd, it checks whether each digit in the number is odd and returns true/false appropriately
 const isOdd = (number) => {
+    //gets stringified individual digits so that their oddness can be checked
     const numArray = getIndividualDigits(number);
+
+    //loops through each digit
     for(let num of numArray){
         //parsing the string digit into an integer
         intNum = parseInt(num);
+
+        //checking whether the digit is even - return false if satisfied
         if(intNum%2 === 0) return false
 
     }
+
+    //if the code reaches here, every digit is odd, return odd
     return true
 }
 
+//simply sums two digits and returns the sum
 const sum = (num1, num2) => {
     return num1 + num2;
 }
 
+//takes a number and returns stringified individual digits in an array so that it can be used by multiple functions
 const getIndividualDigits = (number) => {
+    //converts the number to a string so that it can be split into an array
     numString = number.toString();
+    
+    //splits the string into an array
     const numArray = numString.split('');
+
+    //returns the array
     return numArray;
     
 }
+
+//test
 console.log(listReversible(1000));
