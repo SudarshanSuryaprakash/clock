@@ -76,5 +76,6 @@ const getIndividualDigits = (number) => {
     
 }
 
-//test
+//test - returns the array as expected - My solution runs in quadratic time O(N^2). Also logs the count of the number of digits in the 
+//array for easy checking.
 console.log(listReversible(1000));
