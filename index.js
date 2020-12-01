@@ -47,7 +47,7 @@ const isOdd = (number) => {
     //loops through each digit
     for(let num of numArray){
         //parsing the string digit into an integer
-        intNum = parseInt(num);
+        let intNum = parseInt(num);
 
         //checking whether the digit is even - return false if satisfied
         if(intNum%2 === 0) return false
