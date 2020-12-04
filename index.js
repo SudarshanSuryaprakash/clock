@@ -66,7 +66,7 @@ const sum = (num1, num2) => {
 //takes a number and returns stringified individual digits in an array so that it can be used by multiple functions
 const getIndividualDigits = (number) => {
     //converts the number to a string so that it can be split into an array
-    numString = number.toString();
+    let numString = number.toString();
     
     //splits the string into an array
     const numArray = numString.split('');
